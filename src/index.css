@@ -1,0 +1,75 @@
+/* GENERAL */
+
+:root {
+    /* --- COLORES BASE --- */
+    --bg-main: #121212;       /* Fondo principal (negro suave) */
+    --bg-surface: #1e1e1e;    /* Fondo de tarjetas, menús o secciones */
+    --bg-element: #2d2d2d;    /* Fondo de inputs o elementos interactivos */
+    /* --- TEXTO --- */
+    --text-main: #f5f5f5;     /* Texto principal (alto contraste) */
+    --text-muted: #a0a0a0;    /* Texto secundario, descripciones o fechas */
+    /* --- BORDES Y LÍNEAS --- */
+    --border-color: #2a2a2a;  /* Separadores y bordes sutiles */
+    /* --- COLOR DE ACENTO --- */
+    --accent: #10b981;        /* Verde principal (Esmeralda moderno) */
+    --accent-hover: #00e676;  /* Verde brillante para estados hover */
+    --accent-contrast: #121212; /* Color de texto legible sobre el verde */
+}
+
+body {
+    margin: 0px;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: sans-serif;
+}
+
+/* FOOTER */
+
+
+
+/* HEADER */
+
+header {
+    /*height: 100dvh;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 100%;
+}
+
+.pt-1 {
+    background-color: var(--bg-surface);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.pt-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding-right: 50px;
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+}
+
+.color-1 {
+    background-color: var(--bg-surface);
+    max-width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.color-2 {
+    background-color: var(--accent);
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
