@@ -1,9 +1,10 @@
+import Navbar from './Navbar'
 
 function Header() {
     return <>
+    <Navbar />
         <header>
             <div className="pt-1">
-                <p>Hola!</p>
                 <h1>Soy Joel Joan Castillo Ramos</h1>
                 <h2>Desarollador Web</h2>
                 <div>
